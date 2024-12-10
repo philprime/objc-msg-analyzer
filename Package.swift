@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "objc-log-analyser",
+    name: "objc-msg-analyzer",
     platforms: [
         .macOS(.v13)
     ],
     products: [
-        .executable(name: "objc-log-analyser", targets: ["objc-log-analyser"])
+        .executable(name: "objc-msg-analyzer", targets: ["objc-msg-analyzer"])
     ],
     targets: [
-        .target(name: "objc-log-analyser"),
+        .executableTarget(name: "objc-msg-analyzer")
     ]
 )
