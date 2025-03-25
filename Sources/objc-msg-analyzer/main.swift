@@ -5,7 +5,8 @@ validatePreconditions()
 
 // -- PREPARE DATA --
 // To reduce noise in the captured objc log, prepare as much data before executing the code block.
-let tempPath = URL(fileURLWithPath: NSTemporaryDirectory())
+let tempDir = NSTemporaryDirectory()
+let tempPath = URL(fileURLWithPath: tempDir)
     .appending(path: UUID().uuidString)
     .appendingPathExtension("tmp")
 let data = Data()
